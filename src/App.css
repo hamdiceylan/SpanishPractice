@@ -1,0 +1,82 @@
+.app {
+  min-height: 80vh;
+}
+
+/* Back button */
+.back-button {
+  background: none;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  color: var(--accent);
+}
+
+/* Tense header */
+.tense-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.tense-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tense-header h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.tense-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 500px;
+  margin: 0 auto 0.75rem;
+}
+
+.tense-example {
+  font-size: 1.1rem;
+  color: var(--accent-dark);
+  font-style: italic;
+}
+
+/* Mode toggle */
+.mode-toggle {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.mode-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.mode-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.mode-btn:hover:not(.active) {
+  background: var(--accent-light);
+  color: var(--text-primary);
+}

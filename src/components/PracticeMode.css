@@ -1,0 +1,169 @@
+.practice {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.practice-score {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.score-correct {
+  color: var(--success);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.score-divider {
+  margin: 0 0.25rem;
+  color: var(--text-light);
+}
+
+.score-total {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.score-percentage {
+  margin-left: 0.5rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.practice-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.practice-prompt {
+  margin-bottom: 1rem;
+}
+
+.practice-verb {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  display: block;
+}
+
+.practice-english {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.practice-pronoun {
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--accent-light);
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.practice-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.practice-input {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  color: var(--text-primary);
+  text-align: center;
+  width: 280px;
+  max-width: 100%;
+  transition: border-color 0.2s;
+}
+
+.practice-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.practice-input.correct {
+  border-color: var(--success);
+  background: rgba(107, 158, 107, 0.08);
+}
+
+.practice-input.almost {
+  border-color: #c4a646;
+  background: rgba(196, 166, 70, 0.08);
+}
+
+.practice-input.incorrect {
+  border-color: var(--error);
+  background: rgba(196, 112, 112, 0.08);
+}
+
+.practice-submit {
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.practice-submit:hover {
+  background: var(--accent-dark);
+}
+
+.practice-feedback {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+}
+
+.practice-feedback.correct {
+  background: rgba(107, 158, 107, 0.1);
+  color: var(--success);
+}
+
+.practice-feedback.almost {
+  background: rgba(196, 166, 70, 0.1);
+  color: #8b7a20;
+}
+
+.practice-feedback.incorrect {
+  background: rgba(196, 112, 112, 0.1);
+  color: var(--error);
+}
+
+.practice-feedback strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+}
+
+.practice-next {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.practice-next:hover {
+  background: var(--accent-dark);
+}
+
+.practice-hint {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
