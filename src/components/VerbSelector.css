@@ -1,51 +1,160 @@
 .verb-selector {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+/* Group by toggle */
+.group-by-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.group-by-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.group-toggle-btn {
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.group-toggle-btn.active {
+  background: var(--accent-dark);
+  color: white;
+  border-color: var(--accent-dark);
+}
+
+.group-toggle-btn:hover:not(.active) {
+  background: var(--accent-light);
+}
+
+.verb-count {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Verb group */
+.verb-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.verb-group-header {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: none;
+  text-align: left;
+  border-bottom: 1px solid transparent;
+}
+
+.verb-group-header:hover {
+  background: var(--bg-secondary);
+}
+
+.verb-group-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .verb-group-title {
-  font-size: 1rem;
-  color: var(--text-light);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  font-size: 1.05rem;
+  color: var(--text-primary);
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin: 0;
 }
 
+.verb-group-count {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  background: var(--bg-secondary);
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.verb-group-chevron {
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  transition: transform 0.2s;
+}
+
+.verb-group-chevron.expanded {
+  transform: rotate(90deg);
+}
+
+.verb-group-desc {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+/* Verb grid */
 .verb-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 0.6rem;
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .verb-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
-  padding: 1rem;
-  background: var(--bg-card);
+  gap: 0.2rem;
+  padding: 0.85rem 0.5rem;
+  background: var(--bg-primary);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
+  border-radius: 10px;
 }
 
 .verb-card:hover {
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   border-color: var(--accent);
+  background: white;
 }
 
 .verb-infinitive {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--text-primary);
   font-weight: 600;
 }
 
 .verb-english {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--text-light);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.verb-type-badge {
+  font-size: 0.65rem;
+  color: var(--accent-dark);
+  background: var(--accent-light);
+  padding: 0.1rem 0.45rem;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 0.15rem;
 }
